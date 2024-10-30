@@ -1,2 +1,2 @@
 Контрольная №1. Основы WEB-технологий
-https://github.com/CharmyGreen38/kr/
+https://CharmyGreen38.github.io/CharmyGreen38/kr/
