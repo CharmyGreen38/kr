@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алгоритмическая задача</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигационная часть -->
+    <nav>
+        <ul>
+            <li><a href="index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/IMO_logo.svg" alt="главная" style="width:50px;height:35px;">
+              </a></li>
+            <li><a href="material.html">Полезные материалы</a></li>
+            <li><a href="material.html#ych">Учебники</a></li>
+            <li><a href="task.html">Задачи</a></li>
+            <li><a href="check.html">Запись на занятия</a></li>
+            <li><a href="https://olympiads.mccme.ru/matprazdnik/" target="_blank">Математический праздник</a></li>
+            <li><a href="passport.html">Паспорт</a></li>
+            <li><a href="algoritm.html" class="active">Алгоритмическая задача</a></li>
+        </ul>
+    </nav>
+<h3>Решение алгоритмической задачи</h3>
+<h4>1002. Дано вещественное число. Определить, какое это число: положительное, отрицательное, ноль.</h5>
+<p>Вещественное число: <span id="number">9090909.12345678901234567890</span></p>
+<button id="start">Узнать знак</button> 
+<p>Результат: <span id="result"></span></p>
+
+<script src="alg1.js"></script>
+<p></p>
+<h3>Форма</h3>
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <p><input type="hidden"  name="q" value="search"></p>
+    <p> Формулировка задачи:
+        <p><TEXTAREA cols=80 rows=4 name="task" >Дано вещественное число. Определить, какое это число: положительное, отрицательное, ноль.</TEXTAREA></p>
+    </p>
+    <p>
+        Число: <input id="number1" type="text" name="number1" size=20 value="0">
+    </p>
+    <p>
+        Результат: <input id="result1" type="text" name="result1" size=20 value="не известно">
+    </p>
+    <p>1.<input  id="verify" type="button" name="verify"  value="Проверить"></p>
+    <p>2.<input type="submit"  value="Отправить"></p>
+<script src="alg2.js"></script>
+</form>
+</body>
+</html>
