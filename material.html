@@ -4,40 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Материалы</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Навигационная часть -->
-    <nav>
-        <ul>
-            <li><a href="index.html">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/IMO_logo.svg" alt="главная" style="width:50px;height:35px;">
-              </a></li>
-            <li><a href="material.html" class="active">Полезные материалы</a></li>
-            <li><a href="material.html#ych">Учебники</a></li>
-            <li><a href="task.html">Задачи</a></li>
-            <li><a href="check.html">Запись на занятия</a></li>
-            <li><a href="https://olympiads.mccme.ru/matprazdnik/" target="_blank">Математический праздник</a></li>
-            <li><a href="passport.html">Паспорт</a></li>
-            <li><a href="algoritm.html">Алгоритмическая задача</a></li>
-
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/IMO_logo.svg" alt="Главная" style="width:50px;height:35px;"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="material.html">Полезные материалы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="material.html#ych">Учебники</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="task.html">Задачи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="check.html">Запись на занятия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://olympiads.mccme.ru/matprazdnik/" target="_blank">Математический праздник</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <!-- Содержимое страницы "Полезные материалы" -->
-
+    
         <header>
             <h1>Полезные материалы для подготовки к олимпиаде</h1>
         </header>
         <section>
             <h2>Категории материалов</h2>
             <p>Мы собрали для вас лучшие ресурсы для подготовки к математическим олимпиадам. Выберите категорию, которая вам нужна, и начните подготовку прямо сейчас.</p>
-        <nav> <ol>
-            <li><a href="material.html#cbr">Сборники задач</a></li>
-            <li><a href="material.html#vid">Видеоуроки</a></li>
-            <li><a href="material.html#onl">Онлайн-тесты</a></li>
-            <li><a href="material.html#ych">Литература</a></li>
-            <li><a href="material.html#for">Форумы общения</a></li>
-        </ol></nav>
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ol class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="material.html#cbr">Сборники задач</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="material.html#vid">Видеоуроки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="material.html#onl">Онлайн-тесты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="material.html#ych">Литература</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="material.html#for">Форумы общения</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </nav>
+            
             <div class="content"> <p><a name="cbr"></a></p> </div>
             <h3>1. Сборники задач и примеры решений</h3> 
             <ul>
@@ -63,6 +99,7 @@
                 <img src="images/video_lessons.jpg" alt="Видеоуроки по математике">
                 <figcaption>Видеоуроки — удобный способ изучать новые темы и разбирать сложные задачи.</figcaption>
             </figure>
+
             <div class="content"> <p><a name="onl"></a></p> </div>
             <h3>3. Онлайн-тесты и тренажеры</h3>
             <ul>
@@ -90,9 +127,26 @@
                 <li><a href="https://telegram.me/mathclub">Канал в Telegram для обсуждений и советов</a></li>
             </ul>
         </section>
-        
+
+        <div class="card-body">
+            <h5 class='card-title text-center'>Магазин</h5>
+            <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                <input name="q" type="hidden" value="search">
+                <ul class="d-flex flex-row flex-wrap justify-content-around bg-light" id="node_for_insert">
+                <!--начало генерируемого фрагмента кода -->
+                </ul>
+                <input class="btn btn-primary" type="Submit" value="В корзину">
+            </form>
+        </div>
+
+    <script src="shop.js"></script>
+
         <footer>
             <p>&copy; 2024 Подготовка к математической олимпиаде для 5-7 классов</p>
         </footer>
 </body>
+<script crossorigin="anonymous"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
