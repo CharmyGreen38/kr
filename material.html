@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Навигационная часть -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,7 +20,7 @@
                         <a class="nav-link" href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/IMO_logo.svg" alt="Главная" style="width:50px;height:35px;"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="material.html">Полезные материалы</a>
+                        <a class="nav-link  active" href="material.html">Полезные материалы</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="material.html#ych">Учебники</a>
@@ -47,7 +46,7 @@
             <h2>Категории материалов</h2>
             <p>Мы собрали для вас лучшие ресурсы для подготовки к математическим олимпиадам. Выберите категорию, которая вам нужна, и начните подготовку прямо сейчас.</p>
             
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -129,13 +128,14 @@
         </section>
 
         <div class="card-body">
-            <h5 class='card-title text-center'>Магазин</h5>
-            <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <h3>6. Магазин</h3>
+            <input type="radio" id="price" name="sort" onchange="sort()">Сортировать по цене (возрастание)</input>
+            <form action="https://www.bing.com/search?" id="UserEnter" target="_blank">
                 <input name="q" type="hidden" value="search">
                 <ul class="d-flex flex-row flex-wrap justify-content-around bg-light" id="node_for_insert">
-                <!--начало генерируемого фрагмента кода -->
+                
                 </ul>
-                <input class="btn btn-primary" type="Submit" value="В корзину">
+                <input  class="btn btn-primary" type="Submit" value="В корзину">
             </form>
         </div>
 
